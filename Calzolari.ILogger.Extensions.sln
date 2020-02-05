@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calzolari.ILogger.Extensions.NSusbtitute", "ILogger-extensions-unit-tests\Calzolari.ILogger.Extensions.NSusbtitute.csproj", "{E714CB6E-5AAA-4A28-B4F1-9E4C56F214C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calzolari.ILogger.Extensions.NSusbtitute", "Calzolari.ILogger.Extensions.NSusbtitute\Calzolari.ILogger.Extensions.NSusbtitute.csproj", "{E714CB6E-5AAA-4A28-B4F1-9E4C56F214C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
