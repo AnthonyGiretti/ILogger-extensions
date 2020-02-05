@@ -8,7 +8,9 @@ Extensions on Ilogger for unit testing
 
 - Provides ILogger matching arguments check with a LogLevel, an exception and a message
 - Provides ILogger matching arguments check with a LogLevel and a message
-- Provides ILogger non matching arguments check
+- Provides ILogger non matching arguments check (no logger called at all)
+- Provides ILogger non matching arguments check with a LogLevel, an exception and a message
+- Provides ILogger non matching arguments check with a LogLevel and a message
 
 ### Usage with NSubstitute
 
