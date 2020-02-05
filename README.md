@@ -172,6 +172,7 @@ public void When_invoked_logDebug_after_calling_method_should_not_be_called()
 
     // Assert
     loggerMock.ReceivedMatchingArgs(LogLevel.Debug, "Before calling Get method");
+    loggerMock.ReceivedMatchingArgs(LogLevel.Error, "Error occured during Get execution");
     loggerMock.DidNotReceiveMatchingArgs(LogLevel.Debug, "After calling Get method");
 }
 ```
