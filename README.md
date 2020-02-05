@@ -1,7 +1,7 @@
 # Calzolari-ILogger-extensions
 Extensions on Ilogger for unit testing
 
-![](https://github.com/AnthonyGiretti/Calzolari-ILogger-extensions/workflows/Build/badge.svg)
+![](https://github.com/AnthonyGiretti/Calzolari-ILogger-extensions/workflows/dotnetcore/badge.svg)
 [![Nuget](https://img.shields.io/nuget/v/Calzolari.ILogger.Extensions.NSusbtitute)](https://www.nuget.org/packages/Calzolari.ILogger.Extensions.NSusbtitute/) (NSusbtitute dependency)
 
 ## Features
