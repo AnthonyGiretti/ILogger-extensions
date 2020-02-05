@@ -22,7 +22,7 @@ public object GetData(string name)
     {
         return myService.Get(name);
     }
-    catch(Exception e)
+    catch (Exception e)
     {
         logger.LogError(e, "Error occured during Get execution");
         return string.Empty;
