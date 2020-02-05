@@ -39,7 +39,7 @@ public void When_exception_is_raised_should_log_error_exception()
     myServiceMock.Get(Arg.Any<string>()).Throws(exception);
 
     // Act
-    Func<Task> act = async () => await sut.GetData("test");
+    sut.GetData("test");
 
     // Assert
     loggerMock.ReceivedMatchingArgs(LogLevel.Error, exception, "Error occured during Get execution");
