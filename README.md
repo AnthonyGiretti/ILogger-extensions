@@ -35,7 +35,7 @@ Unit test:
 public void When_exception_is_raised_should_log_error_exception()
 {
     // Arrange
-    var exception = new Exception("an error occured")
+    var exception = new Exception("an error occured");
     myServiceMock.Get(Arg.Any<string>()).Throws(exception);
 
     // Act
@@ -43,5 +43,31 @@ public void When_exception_is_raised_should_log_error_exception()
 
     // Assert
     loggerMock.ReceivedMatchingArgs(LogLevel.Error, exception, "Error occured during Get execution");
+}
+```
+
+#### Argument matching check with a LogLevel and a message
+
+Service:
+```csharp
+public object GetData(string name)
+{
+    logger.LogDebug("Calling Get method");
+    return myService.Get(name);
+}
+```
+
+Unit test:
+```csharp
+public void When_invoked_should_logDebug_should_be_called()
+{
+    // Arrange
+    myServiceMock.Get(Arg.Any<string>()).Returns("Hello");
+
+    // Act
+    sut.GetData("test");
+
+    // Assert
+    loggerMock.ReceivedMatchingArgs(LogLevel.Debug, "Calling Get method");
 }
 ```
