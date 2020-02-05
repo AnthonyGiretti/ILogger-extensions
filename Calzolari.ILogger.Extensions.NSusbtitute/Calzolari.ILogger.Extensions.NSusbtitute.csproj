@@ -10,7 +10,7 @@
     <Authors>Anthony Giretti</Authors>
     <Company>Calzolari</Company>
     <PackageTags>NSubstitute;ILogger;extensions;matching arguments; non matching arguments</PackageTags>
-    <Version>2.2.0</Version>
+    <Version>3.1.1</Version>
     <PackageIcon>calzolari.png</PackageIcon>
     <PackageIconUrl />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
