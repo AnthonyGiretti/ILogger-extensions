@@ -71,7 +71,7 @@ public void When_invoked_should_logDebug_should_be_called()
     loggerMock.ReceivedMatchingArgs(LogLevel.Debug, "Calling Get method");
 }
 ```
-#### Non matching argument check
+#### Non matching argument check (logger hasn't been called at all)
 
 Service:
 ```csharp
@@ -92,7 +92,7 @@ public object GetData(string name)
 
 Unit test:
 ```csharp
-public void When_invoked_should_logDebug_should_be_called()
+public void When_invoked_logger_should_not_be_called()
 {
     // Arrange
     myServiceMock.Get(Arg.Any<string>()).Throws(new Exception())
@@ -101,6 +101,77 @@ public void When_invoked_should_logDebug_should_be_called()
     sut.GetData("test");
 
     // Assert
-    loggerMock.DidNotReceiveAnyMatchingArgs();
+    loggerMock.DidNotReceiveMatchingArgs();
+}
+```
+#### Non matching argument check for a specific LogLevel
+
+Service:
+```csharp
+public object GetData(string name)
+{
+    try
+    {
+        var result = myService.Get(name);
+        logger.LogInformation("Calling Get method");
+        return result;
+    }
+    catch (Exception e)
+    {
+        logger.LogError("Error occured during Get execution");
+        return string.Empty;
+    }
+}
+```
+
+Unit test:
+```csharp
+public void When_invoked_logError_should_not_be_called()
+{
+    // Arrange
+    myServiceMock.Get(Arg.Any<string>()).Returns("Hello")
+
+    // Act
+    sut.GetData("test");
+
+    // Assert
+    loggerMock.DidNotReceiveMatchingArgs(LogLevel.Error);
+}
+```
+
+#### Non matching argument check for a specific LogLevel and message
+
+Service:
+```csharp
+public object GetData(string name)
+{
+    try
+    {
+        logger.LogDebug("Before calling Get method");
+        var result = myService.Get(name);
+        logger.LogDebug("After calling Get method");
+        return result;
+    }
+    catch (Exception e)
+    {
+        logger.LogError("Error occured during Get execution");
+        return string.Empty;
+    }
+}
+```
+
+Unit test:
+```csharp
+public void When_invoked_logDebug_after_calling_method_should_not_be_called()
+{
+    // Arrange
+    myServiceMock.Get(Arg.Any<string>()).Throws(new Exception())
+
+    // Act
+    sut.GetData("test");
+
+    // Assert
+    loggerMock.ReceivedMatchingArgs(LogLevel.Debug, "Before calling Get method");
+    loggerMock.DidNotReceiveMatchingArgs(LogLevel.Debug, "After calling Get method");
 }
 ```
