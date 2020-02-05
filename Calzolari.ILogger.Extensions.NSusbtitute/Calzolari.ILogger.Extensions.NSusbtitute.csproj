@@ -3,12 +3,30 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Calzolari.ILogger.Extensions.NSusbtitute</AssemblyName>
+    <RepositoryUrl>https://github.com/AnthonyGiretti/Calzolari-ILogger-extensions</RepositoryUrl>
+    <Description>Extensions on Ilogger for unit testing
+- Matching arguments
+- Non matching arguments</Description>
+    <Authors>Anthony Giretti</Authors>
+    <Company>Calzolari</Company>
+    <PackageTags>NSubstitute;ILogger;extensions;matching arguments; non matching arguments</PackageTags>
+    <Version>2.2.0</Version>
+    <PackageIcon>calzolari.png</PackageIcon>
+    <PackageIconUrl />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="ExpectedObjects" Version="2.3.4" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
     <PackageReference Include="NSubstitute" Version="4.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\calzolari.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   
 </Project>
