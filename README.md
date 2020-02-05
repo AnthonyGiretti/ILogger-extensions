@@ -12,7 +12,7 @@ Extensions on Ilogger for unit testing
 
 ### Usage with NSubstitute
 
-#### Argument matching check with a LogLevel, exception and a message
+#### Matching argument check with a LogLevel, exception and a message
 
 Service:
 ```csharp
@@ -46,7 +46,7 @@ public void When_exception_is_raised_should_log_error_exception()
 }
 ```
 
-#### Argument matching check with a LogLevel and a message
+#### Matching argument check with a LogLevel and a message
 
 Service:
 ```csharp
@@ -69,5 +69,38 @@ public void When_invoked_should_logDebug_should_be_called()
 
     // Assert
     loggerMock.ReceivedMatchingArgs(LogLevel.Debug, "Calling Get method");
+}
+```
+#### Non matching argument check
+
+Service:
+```csharp
+public object GetData(string name)
+{
+    try
+    {
+        var result = myService.Get(name);
+        logger.LogDebug("Get method called");
+        return result;
+    }
+    catch (Exception e)
+    {
+        return string.Empty;
+    }
+}
+```
+
+Unit test:
+```csharp
+public void When_invoked_should_logDebug_should_be_called()
+{
+    // Arrange
+    myServiceMock.Get(Arg.Any<string>()).Throws(new Exception())
+
+    // Act
+    sut.GetData("test");
+
+    // Assert
+    loggerMock.DidNotReceiveAnyMatchingArgs();
 }
 ```
