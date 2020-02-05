@@ -50,7 +50,7 @@ namespace Microsoft.Extensions.Logging
         /// No logger has been called
         /// </summary>
         /// <param name="logger"></param>
-        public static void DidNotReceiveMatchingLogArgs(this ILogger logger)
+        public static void DidNotReceiveMatchingArgs(this ILogger logger)
         {
             logger.DidNotReceive().Log(Arg.Any<LogLevel>(),
                                        Arg.Any<EventId>(),
@@ -63,7 +63,7 @@ namespace Microsoft.Extensions.Logging
         /// No logger has been called with a specific <see cref="LogLevel"/>
         /// </summary>
         /// <param name="logger"></param>
-        public static void DidNotReceiveMatchingLogArgs(this ILogger logger, LogLevel logLevel)
+        public static void DidNotReceiveMatchingArgs(this ILogger logger, LogLevel logLevel)
         {
             logger.DidNotReceive().Log(Arg.Is(logLevel),
                                        Arg.Any<EventId>(),
@@ -76,7 +76,7 @@ namespace Microsoft.Extensions.Logging
         /// No logger has been called with a specific <see cref="LogLevel"/> and <see cref="string"/> message
         /// </summary>
         /// <param name="logger"></param>
-        public static void DidNotReceiveMatchingLogArgs(this ILogger logger, LogLevel logLevel, string formattedMessage)
+        public static void DidNotReceiveMatchingArgs(this ILogger logger, LogLevel logLevel, string formattedMessage)
         {
             logger.DidNotReceive().Log(Arg.Is(logLevel),
                                        Arg.Any<EventId>(),
