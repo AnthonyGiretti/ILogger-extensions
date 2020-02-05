@@ -1,8 +1,8 @@
 # Calzolari-ILogger-extensions
 Extensions on Ilogger for unit testing
 
-![](https://github.com/AnthonyGiretti/grpc-aspnetcore-validator/workflows/Build/badge.svg)
-[![Nuget](https://img.shields.io/nuget/v/Calzolari.Grpc.AspNetCore.Validation)](https://www.nuget.org/packages/Calzolari.Grpc.AspNetCore.Validation)
+![](https://github.com/AnthonyGiretti/Calzolari-ILogger-extensions/workflows/Build/badge.svg)
+[![Nuget](https://img.shields.io/nuget/v/Calzolari.ILogger.Extensions.NSusbtitute)](https://www.nuget.org/packages/Calzolari.ILogger.Extensions.NSusbtitute/)
 
 ## Features
 
