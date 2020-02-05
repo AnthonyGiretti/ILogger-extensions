@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <PackageReference Include="ExpectedObjects" Version="2.3.4" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.1" />
     <PackageReference Include="NSubstitute" Version="4.2.1" />
   </ItemGroup>
 
