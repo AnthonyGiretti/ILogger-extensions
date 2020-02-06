@@ -4,6 +4,13 @@ Extensions on Ilogger for unit testing
 ![](https://github.com/AnthonyGiretti/Calzolari-ILogger-extensions/workflows/dotnetcore/badge.svg)
 [![Nuget](https://img.shields.io/nuget/v/Calzolari.ILogger.Extensions.NSusbtitute)](https://www.nuget.org/packages/Calzolari.ILogger.Extensions.NSusbtitute/) (NSusbtitute dependency)
 
+Must match your Microsoft.Extensions.Logging version in your project
+
+Examples: 
+
+If you use ILogger from dependency Microsoft.Extensions.Logging (>= 3.1.1), use package Microsoft.Extensions.Logging (>= 3.1.1.x)
+If you use ILogger from dependency Microsoft.Extensions.Logging (>= 2.2.0), use package Microsoft.Extensions.Logging (>= 2.2.0.x)
+
 ## Features
 
 - Provides ILogger matching arguments check with a LogLevel, an exception and a message
