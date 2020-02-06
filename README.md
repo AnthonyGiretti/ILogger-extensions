@@ -9,6 +9,7 @@ Must match your Microsoft.Extensions.Logging version in your project
 Examples: 
 
 If you use ILogger from dependency Microsoft.Extensions.Logging (>= 3.1.1), use package Microsoft.Extensions.Logging (>= 3.1.1.x)
+
 If you use ILogger from dependency Microsoft.Extensions.Logging (>= 2.2.0), use package Microsoft.Extensions.Logging (>= 2.2.0.x)
 
 ## Features
