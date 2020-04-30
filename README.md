@@ -4,18 +4,12 @@ Extensions on Ilogger for unit testing
 ![](https://github.com/AnthonyGiretti/Calzolari-ILogger-extensions/workflows/dotnetcore/badge.svg)
 [![Nuget](https://img.shields.io/nuget/v/Calzolari.ILogger.Extensions.NSusbtitute)](https://www.nuget.org/packages/Calzolari.ILogger.Extensions.NSusbtitute/) (NSusbtitute dependency)
 
-Must match your Microsoft.Extensions.Logging version in your project
-
 #### NOT WORKING WITH Microsoft.Extensions.Logging 3+, BECAUSE regression has been made, explanation here: https://github.com/dotnet/extensions/issues/1319
 #### Unfortunately NSubstitute doesn't handle "AnyType" feature, It can only ignore specifics type in matching calls
 
-Examples: 
+Must match your Microsoft.Extensions.Logging version in your project
 
-If you use ILogger from dependency Microsoft.Extensions.Logging (>= 3.1.3), use package Microsoft.Extensions.Logging (>= 3.1.3.x)
-
-If you use ILogger from dependency Microsoft.Extensions.Logging (>= 3.1.2), use package Microsoft.Extensions.Logging (>= 3.1.2.x)
-
-If you use ILogger from dependency Microsoft.Extensions.Logging (>= 3.1.1), use package Microsoft.Extensions.Logging (>= 3.1.1.x)
+Example: 
 
 If you use ILogger from dependency Microsoft.Extensions.Logging (>= 2.2.0), use package Microsoft.Extensions.Logging (>= 2.2.0.x)
 
