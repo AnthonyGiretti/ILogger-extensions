@@ -6,7 +6,7 @@ Extensions on Ilogger for unit testing
 
 Must match your Microsoft.Extensions.Logging version in your project
 
-### CURRENTLY NOT WORKING WITH Microsoft.Extensions.Logging 3+,vTRYING TO FIX IT ASAP
+#### CURRENTLY NOT WORKING WITH Microsoft.Extensions.Logging 3+, TRYING TO FIX IT ASAP
 
 Examples: 
 
