@@ -11,7 +11,6 @@ namespace Microsoft.Extensions.Logging
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="logLevel"></param>
-        /// <param name="exception"></param>
         /// <param name="formattedMessage"></param>
         public static void ReceivedMatchingArgs(this ILogger logger, LogLevel logLevel, string formattedMessage)
         {
@@ -37,13 +36,19 @@ namespace Microsoft.Extensions.Logging
                 logger.ReceivedMatchingArgs(logLevel, formattedMessage);
             }
 
-            var expectedException = exception.ToExpectedObject();
+            //var expectedException = exception.ToExpectedObject();
 
-            logger.Received().Log(Arg.Is(logLevel),
-                                  Arg.Is<EventId>(0),
-                                  Arg.Is<object>(x => x.ToString() == formattedMessage),
-                                  Arg.Is<Exception>(x => expectedException.Equals(x)),
-                                  Arg.Any<Func<object, Exception, string>>());
+            //logger.Received().Log(Arg.Is(logLevel),
+            //                      Arg.Is<EventId>(0),
+            //                      Arg.Is<object>(x => x.ToString() == formattedMessage),
+            //                      Arg.Is<Exception>(x => expectedException.Equals(x)),
+            //                      Arg.Any<Func<object, Exception, string>>());
+
+            logger.Received().Log(Arg.Any<LogLevel>(),
+                Arg.Any<EventId>(),
+                Arg.Any<object>(),
+                Arg.Any<Exception>(),
+                Arg.Any<Func<object, Exception, string>>());
         }
 
         /// <summary>

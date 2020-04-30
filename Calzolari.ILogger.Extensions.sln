@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{F7A03715
 		calzolari.png = calzolari.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calzolari.ILogger.Extensions.NSubstitute.Tests", "Calzolari.ILogger.Extensions.NSubstitute.Tests\Calzolari.ILogger.Extensions.NSubstitute.Tests.csproj", "{88E9CBF2-096B-478C-BCE5-5AD282A90148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calzolari.ILogger.Extensions.Services", "Calzolari.ILogger.Extensions.Services\Calzolari.ILogger.Extensions.Services.csproj", "{BD50B922-31FC-4C7A-A0EF-12F909ECAA77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{E714CB6E-5AAA-4A28-B4F1-9E4C56F214C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E714CB6E-5AAA-4A28-B4F1-9E4C56F214C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E714CB6E-5AAA-4A28-B4F1-9E4C56F214C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E9CBF2-096B-478C-BCE5-5AD282A90148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E9CBF2-096B-478C-BCE5-5AD282A90148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E9CBF2-096B-478C-BCE5-5AD282A90148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E9CBF2-096B-478C-BCE5-5AD282A90148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD50B922-31FC-4C7A-A0EF-12F909ECAA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD50B922-31FC-4C7A-A0EF-12F909ECAA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD50B922-31FC-4C7A-A0EF-12F909ECAA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD50B922-31FC-4C7A-A0EF-12F909ECAA77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
