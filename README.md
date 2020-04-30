@@ -6,6 +6,8 @@ Extensions on Ilogger for unit testing
 
 Must match your Microsoft.Extensions.Logging version in your project
 
+### CURRENTLY NOT WORKING WITH Microsoft.Extensions.Logging 3+,vTRYING TO FIX IT ASAP
+
 Examples: 
 
 If you use ILogger from dependency Microsoft.Extensions.Logging (>= 3.1.3), use package Microsoft.Extensions.Logging (>= 3.1.3.x)
