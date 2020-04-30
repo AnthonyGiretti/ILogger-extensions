@@ -6,7 +6,8 @@ Extensions on Ilogger for unit testing
 
 Must match your Microsoft.Extensions.Logging version in your project
 
-#### CURRENTLY NOT WORKING WITH Microsoft.Extensions.Logging 3+, TRYING TO FIX IT ASAP
+#### NOT WORKING WITH Microsoft.Extensions.Logging 3+, BECAUSE regression has been made, explanation here: https://github.com/dotnet/extensions/issues/1319
+#### Unfortunately NSubstitute doesn't handle "AnyType" feature, It can only ignore specifics type in matching calls
 
 Examples: 
 
