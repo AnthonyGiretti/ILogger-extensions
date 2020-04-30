@@ -5,7 +5,7 @@ Extensions on Ilogger for unit testing
 [![Nuget](https://img.shields.io/nuget/v/Calzolari.ILogger.Extensions.NSusbtitute)](https://www.nuget.org/packages/Calzolari.ILogger.Extensions.NSusbtitute/) (NSusbtitute dependency)
 
 #### NOT WORKING WITH Microsoft.Extensions.Logging 3+, BECAUSE regression has been made, explanation here: https://github.com/dotnet/extensions/issues/1319
-#### Unfortunately NSubstitute doesn't handle "AnyType" feature, It can only ignore specifics type in matching calls
+#### Unfortunately NSubstitute doesn't handle "Any Type" feature, It can only ignore specifics type in matching calls
 
 Must match your Microsoft.Extensions.Logging version in your project
 
